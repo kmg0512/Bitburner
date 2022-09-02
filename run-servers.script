@@ -1,0 +1,7 @@
+var script = String(args[0]);
+for (var i = 0; i < getPurchasedServerLimit(); i++) {
+    var hostname = String(getPurchasedServers()[i]);
+	scp(script, hostname);
+	// exec("early-hack-template.script", hostname, Number(args[0]) / 2.4);
+	exec(script, hostname, args[1]);
+}

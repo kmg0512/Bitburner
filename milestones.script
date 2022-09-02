@@ -1,0 +1,37 @@
+nuke("n00dles");
+
+brutessh("joesguns");
+nuke("joesguns");
+
+brutessh("catalyst");
+ftpcrack("catalyst");
+relaysmtp("catalyst");
+nuke("catalyst");
+
+// Gain root access on CSEC
+brutessh("CSEC");
+nuke("CSEC");
+
+// Install the backdoor on CSEC
+// singularity.installBackdoor();
+
+// nitesec-test.msg
+brutessh("avmnite-02h");
+ftpcrack("avmnite-02h");
+nuke("avmnite-02h");
+// installBackdoor("avmnite-02h");
+
+// j3.msg
+brutessh("I.I.I.I");
+ftpcrack("I.I.I.I");
+relaysmtp("I.I.I.I");
+nuke("I.I.I.I");
+// installBackdoor("I.I.I.I");
+
+// 19dfj3l1nd.msg
+brutessh("run4theh111z");
+ftpcrack("run4theh111z");
+relaysmtp("run4theh111z");
+httpworm("run4theh111z");
+nuke("run4theh111z");
+// installBackdoor("run4theh111z");
